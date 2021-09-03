@@ -47,6 +47,11 @@ blockquote, q {
     /* border: 2px solid grey; */
 }
 
+
+p{
+    color: #F0F8FF;
+}
+
 html{
     font-size:62.5%;
 }
@@ -86,6 +91,7 @@ header{
    padding-left: 3%;
    padding-top: 1%;
 }
+
 
 
 
