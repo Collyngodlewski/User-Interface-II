@@ -1,1 +1,241 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width:100%;
+    /* border: 2px solid yellow; */
+}
+
+
+p{
+    color: #F0F8FF;
+}
+
+html{
+    font-size:62.5%;
+}
+/* dont forget body */
+
+body{
+    font-size: 2rem;
+    margin: 2%;
+    background-color:
+    #708090;
+    
+}
+
+
+h1{
+    font-size: 6rem;
+}
+ 
+a{
+    color:black;
+    text-decoration: none;
+}
+
+/* Header */
+
+header{
+    height: 15vh;
+    background-color: #F0F8FF;
+   /* margin: 0 auto; */
+   padding-left: 3%;
+   /* padding-top: 1%; */
+ 
+}
+
+nav{
+    margin-bottom: 1%;
+}
+
+button{
+    margin-top: 1%;
+    background-color: #D7DCE1;
+    border:none;
+    padding: 1%;
+    border: 1px solid black;
+}
+
+button:hover{
+    background-color: #708090;
+}
+
+
+/* First Section */
+
+.first{
+    padding-top: 1%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.left{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.firstimage img{
+    width: 100%;
+}
+
+.right{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rightinside{
+    color: 
+    #F0F8FF;
+    text-align: center;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+.rightinside h2{
+    font-size: 3rem;
+}
+
+.rightinside p{
+    padding: 0 5%;
+    font-size: 1.5rem;
+    margin-top: 1%;
+    width: 75%
+}
+
+.projectbutton{
+
+}
+
+
+
+/* Second Section */
+
+.second{
+    
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.second div{
+   margin-top: 3%;
+    width: 25%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  margin-bottom: 2%;
+}
+
+.second img{
+    width: 80%;
+}
+
+
+/* Footer */
+
+footer{
+    background-color:#F0F8FF;
+    text-align: center;
+    padding: 5%;
+}
+
+
+/* Media Queries */
+
+@media(max-width:800px){
+    header{
+        display:flex;
+        justify-content: center;
+        align-content: center;
+        align-items:center;
+        height: 25vh;
+    }
+    .name{
+        margin-bottom:1%;
+    }
+
+    .links{
+        display:flex;
+        justify-content:center;
+        flex-direction: column;
+        align-items:center;
+    }
+    header button{
+        margin: .5% 0;
+        border: 1px solid black;
+        width: 40%;
+        
+    }
+
+    /* First Section */
+
+    .first{
+        margin-top: 2%;
+        flex-wrap: wrap;
+    }
+
+    .left{
+        justify-content: center;
+    }
+
+    .firstimage{
+        width: 50%;
+        margin-left: 2%;
+    }
+
+    .right{
+        margin: 3% 0;
+    }
+
+    .projectbutton{
+        margin: .5% 0;
+        border: 1px solid black;
+        width: 15%;
+    }
+
+    .right p{
+        width: 60%;
+    }
+
+    /* Second Section */
+
+    
+    .second div{
+        width: 50%;
+    }
+}
+
+    @media(max-width:500px){
+
+        .projectbutton{
+            width: 35%;
+        }
+
+    }
