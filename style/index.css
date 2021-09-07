@@ -13,13 +13,6 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	margin: 0;
 	border: 0;
 	}
-/* remember to define focus styles! */
-:focus {
-	outline: 0;
-	}
-
-
-
 
 
 *{
@@ -45,7 +38,7 @@ body{
     margin: 2%;
     background-color:
     #708090;
-   
+    
 }
 
 
@@ -63,9 +56,14 @@ a{
 header{
     height: 15vh;
     background-color: #F0F8FF;
-   margin: 0 auto;
+   /* margin: 0 auto; */
    padding-left: 3%;
-   padding-top: 1%;
+   /* padding-top: 1%; */
+ 
+}
+
+nav{
+    margin-bottom: 1%;
 }
 
 button{
@@ -232,7 +230,12 @@ footer{
     .second div{
         width: 50%;
     }
-
-
-
 }
+
+    @media(max-width:500px){
+
+        .projectbutton{
+            width: 35%;
+        }
+
+    }
