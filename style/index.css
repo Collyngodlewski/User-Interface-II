@@ -18,25 +18,8 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	outline: 0;
 	}
 
-ol, ul {
-	list-style: none;
-	}
-/* tables still need cellspacing="0" in the markup */
-table {
-	border-collapse: separate;
-	border-spacing: 0;
-	}
-caption, th, td {
-	font-weight: normal;
-	text-align: left;
-	}
-/* remove possible quote marks (") from <q> & <blockquote> */
-blockquote:before, blockquote:after, q:before, q:after {
-	content: "";
-	}
-blockquote, q {
-	quotes: "" "";
-	}
+
+
 
 
 *{
@@ -44,7 +27,7 @@ blockquote, q {
     padding: 0;
     margin: 0;
     max-width:100%;
-    /* border: 2px solid grey; */
+    /* border: 2px solid yellow; */
 }
 
 
@@ -64,17 +47,13 @@ body{
     #708090;
    
 }
-section{
-   
-    margin: 0 auto;
-}
+
 
 h1{
     font-size: 6rem;
 }
  
 a{
-    padding-left: 2%;
     color:black;
     text-decoration: none;
 }
@@ -83,28 +62,23 @@ a{
 
 header{
     height: 15vh;
-    /* display:flex;
-    align-items: flex-end; */
-    background-color: 
-    #F0F8FF;
+    background-color: #F0F8FF;
    margin: 0 auto;
    padding-left: 3%;
    padding-top: 1%;
 }
 
-
-
-
-nav a{
-   
-   
-    width:10%;
-  
-    text-align: center;
-    
-   
+button{
+    margin-top: 1%;
+    background-color: #D7DCE1;
+    border:none;
+    padding: 1%;
+    border: 1px solid black;
 }
 
+button:hover{
+    background-color: #708090;
+}
 
 
 /* First Section */
@@ -116,11 +90,10 @@ nav a{
 }
 
 .left{
+    margin-top: 2%;
     width: 100%;
     display: flex;
     align-items: center;
- 
-    
 }
 
 .firstimage img{
@@ -131,7 +104,9 @@ nav a{
     display: flex;
     flex-direction:row;
     justify-content: center;
+    align-items: center;
 }
+
 
 .rightinside{
     color: 
@@ -141,17 +116,24 @@ nav a{
     display:flex;
     flex-direction:column;
     justify-content: center;
+    align-items:center;
     
 }
 
 .rightinside h2{
     font-size: 3rem;
-
 }
 
-.rightinside h3{
+.rightinside p{
+    padding: 0 5%;
+    font-size: 1.5rem;
+    margin-top: 1%;
+    width: 75%
 }
 
+.projectbutton{
+
+}
 
 
 
@@ -187,3 +169,70 @@ footer{
 }
 
 
+/* Media Queries */
+
+@media(max-width:800px){
+    header{
+        display:flex;
+        justify-content: center;
+        align-content: center;
+        align-items:center;
+        height: 25vh;
+    }
+    .name{
+        margin-bottom:1%;
+    }
+
+    .links{
+        display:flex;
+        justify-content:center;
+        flex-direction: column;
+        align-items:center;
+    }
+    header button{
+        margin: .5% 0;
+        border: 1px solid black;
+        width: 40%;
+        
+    }
+
+    /* First Section */
+
+    .first{
+        margin-top: 2%;
+        flex-wrap: wrap;
+    }
+
+    .left{
+        justify-content: center;
+    }
+
+    .firstimage{
+        width: 50%;
+        margin-left: 2%;
+    }
+
+    .right{
+        margin: 3% 0;
+    }
+
+    .projectbutton{
+        margin: .5% 0;
+        border: 1px solid black;
+        width: 15%;
+    }
+
+    .right p{
+        width: 60%;
+    }
+
+    /* Second Section */
+
+    
+    .second div{
+        width: 50%;
+    }
+
+
+
+}
